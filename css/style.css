@@ -1,1 +1,14 @@
 /* YeyeYeee código aquí */
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+
+h1{
+	font-weight: 900;
+}
+
+img{
+	width: 25%;
+	padding-top: 20%; 
+}
