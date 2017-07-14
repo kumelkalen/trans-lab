@@ -28,4 +28,8 @@ $(document).ready(function(){
 	$(".button-collapse").click(function(){
 		$(".slide").toggle();
 	});*/
+	var numId = $("#bip-number").val();
+	if(numId.length == 6){
+
+	}
 });
