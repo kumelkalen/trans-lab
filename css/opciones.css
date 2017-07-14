@@ -1,3 +1,19 @@
 .btn-opc{
 	width:100%;
 }
+.primer-btn{
+	margin-top: 200px;
+}
+.ultimo-btn{
+	margin-bottom: 200px;
+}
+nav{
+	background-color: #424242;
+}
+.icon-nav{
+	margin-left: 40px;
+}
+.nav-wrapper p{
+	margin-top: 0px;
+	width: 75%;
+}
