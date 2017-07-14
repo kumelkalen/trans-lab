@@ -52,6 +52,9 @@ i{
 .a-no-count{
 	font-weight: 900;
 }
+.olvidado:hover{
+	color: #ffb300;
+}
 .errorTxt{
 	float: right;
 	width:100px;
