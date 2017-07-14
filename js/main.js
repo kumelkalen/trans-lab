@@ -1,5 +1,5 @@
 /* Holiii acá va tu código también */
-$(document).ready(function(){
+$(document).ready(function($){
 	//Primer html
 	$(".errorTxt2").hide();
 	$(".errorTxt").hide();
@@ -28,8 +28,17 @@ $(document).ready(function(){
 	$(".button-collapse").click(function(){
 		$(".slide").toggle();
 	});*/
-	var numId = $("#bip-number").val();
-	if(numId.length == 6){
-
-	}
+	//Tercer html
+	$(".invalid").hide();
+	$("#saldo").click(function(){
+		var numId = $("#bip-number").val();
+		console.log(numId);
+		if(numId.length != 6){
+			$(".invalid").show();
+		}else{
+			$(".invalid").hide();
+			
+		}
+	});
+	
 });

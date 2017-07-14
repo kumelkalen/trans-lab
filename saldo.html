@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/opciones.css">
 </head>
 <body>
-	<section class="container-fluid grey lighten-1">
+	<section id="saldo-section" class="container-fluid grey lighten-1">
 
 		<div class="navbar-fixed grey darken-2">
 			<nav>
@@ -39,6 +39,10 @@
         			<input id="bip-number" type="number" class="validate">
         			<label for="number">Número de tarjeta</label>
 				</div>
+			</div>
+			<div class="col s6 offset-s3 invalid">Invalid number</div>
+			<div class="col s6 offset-s3">
+				<button id="saldo" class="btn waves-effect amber" type="submit" name="action">VER SALDO</button>
 			</div>
 		</div>
 		
