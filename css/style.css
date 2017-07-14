@@ -24,6 +24,7 @@ i{
 .btn{
 	width:100%;
 	border-radius: 0;
+	margin-bottom: 5px;
 }
 .row{
 	margin: 0;
@@ -32,4 +33,22 @@ i{
 	padding: 0;
 	margin-top: 0;
 	height: 30px;
+}
+.olvidado{
+	color: white;
+	text-decoration: none;
+	font-size: 6px;
+}
+.last{
+	color: white;
+	margin-top: 25px;
+	padding: 10px;
+}
+.no-count{
+	font-size: 8px;
+	padding-top: 15px;
+}
+.a-no-count{
+	font-size: 8px;
+	font-weight: 900;
 }
