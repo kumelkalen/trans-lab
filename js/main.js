@@ -30,22 +30,28 @@ $(document).ready(function($){
 	});*/
 	//Tercer html
 	$(".invalid").hide();
+	$(".cont-saldo").hide();
 	$("#saldo").click(function(){
+		$(".borrar").empty();
 		var numId = $("#bip-number").val();
 		/*console.log(numId);*/
 		if(numId.length != 6){
 			$(".invalid").show();
+			$(".cont-saldo").hide();
 		}else{
 			$(".invalid").hide();
 			console.log(numId);
 			$.getJSON('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+numId, function(resp) {
-			    /*$.each(resp, function(k, v) {
-        			console.log(k + ' : ' + v);
+				/*$.each(resp, function(k, v) {
+					console.log(k + ' : ' + v);
 				}); 
 				console.log(resp);*/
 				var items = resp;
 				console.log(items.saldoTarjeta);
-				$("#cont-saldo").append('<p>'+items.saldoTarjeta+'</p>');
+				$(".cont-saldo").show();
+				$(".borrar").append('<div class="col s6 offset-s3 grey darken-2 white-text cont-saldo center first-sal">SALDO ACTUAL</div>');
+				$(".borrar").append('<div id="cont-saldo" class="col s6 offset-s3 amber white-text cont-saldo center"><p>'+items.saldoTarjeta+'</p></div>');
+				
 			});
 		}
 	});
