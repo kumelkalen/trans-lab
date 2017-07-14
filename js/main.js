@@ -32,12 +32,15 @@ $(document).ready(function($){
 	$(".invalid").hide();
 	$("#saldo").click(function(){
 		var numId = $("#bip-number").val();
-		console.log(numId);
+		/*console.log(numId);*/
 		if(numId.length != 6){
 			$(".invalid").show();
 		}else{
 			$(".invalid").hide();
-			
+			console.log(numId);
+			$.getJSON('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+numId, function(resp) {
+			    
+			});
 		}
 	});
 	
