@@ -45,6 +45,7 @@ $(document).ready(function($){
 				console.log(resp);*/
 				var items = resp;
 				console.log(items.saldoTarjeta);
+				$("#cont-saldo").append('<p>'+items.saldoTarjeta+'</p>');
 			});
 		}
 	});
