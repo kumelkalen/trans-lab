@@ -8,6 +8,8 @@ $(document).ready(function($){
 		console.log(user);
 		var contraseña = $("#password").val();
 		console.log(contraseña);
+		//Guardar en localStorage
+		localStorage.setItem(user,contraseña);
 		//Validación email
 		function validateEmail(email) {
 			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -35,7 +37,7 @@ $(document).ready(function($){
 		$(".borrar").empty();
 		var numId = $("#bip-number").val();
 		/*console.log(numId);*/
-		if(numId.length != 6){
+		if(numId.length != 8){
 			$(".invalid").show();
 			$(".cont-saldo").hide();
 		}else{
