@@ -1,6 +1,6 @@
 /* Holiii acá va tu código también */
 $(document).ready(function(){
-	
+	//Primer html
 	$(".errorTxt2").hide();
 	$(".errorTxt").hide();
 	$("#iniciar-sesion").click(function(e) {
@@ -23,4 +23,9 @@ $(document).ready(function(){
 			location.href = "opciones.html";
 		}
 	});
+	//segundo html
+	/*$(".slide").hide();
+	$(".button-collapse").click(function(){
+		$(".slide").toggle();
+	});*/
 });
