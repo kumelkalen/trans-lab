@@ -39,10 +39,12 @@ $(document).ready(function($){
 			$(".invalid").hide();
 			console.log(numId);
 			$.getJSON('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+numId, function(resp) {
-			    $.each(resp, function(k, v) {
+			    /*$.each(resp, function(k, v) {
         			console.log(k + ' : ' + v);
 				}); 
-				
+				console.log(resp);*/
+				var items = resp;
+				console.log(items.saldoTarjeta);
 			});
 		}
 	});
