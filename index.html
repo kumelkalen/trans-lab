@@ -8,9 +8,9 @@
 	<!-- Materialize minified css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<!-- Iconos materialize -->
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	 <!-- Fonts -->
-	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,26 +21,26 @@
 				<p class="amber-text">TRANS-LAB</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class=" input-field white col s10 offset-s1 second">
-				<i class="material-icons prefix">perm_identity</i>
-				<input id="icon_prefix" type="text" class="validate">
-				<label for="icon_prefix"><p>First Name</p></label>
+		<form action="" method="get" id="form" novalidate="novalidate"></form>
+			<div class="row">
+				<div class=" input-field white col s10 offset-s1 email">
+					<i class="material-icons prefix">perm_identity</i>
+					<input id="email" class="input-cont" name="email" type="text">
+					<label for="email"><p>Correo electrónico</p></label>
+				</div>
+				<div id="errorTxt" class="col s10 offset-s1 errorTxt amber center">This field is required.</div>
+				<div class="input-field white col s10 offset-s1 contraseña">
+					<i class=" material-icons prefix">lock</i>
+					<input id="password" class="input-cont" name="password" type="password">
+					<label for="password"><p>Contraseña</p></label>
+				</div>
+				<div id="errorTxt2" class="col s10 offset-s1 errorTxt2 amber center">This field is required.</div>
+				<div class="input-field col s10 offset-s1">
+					<button id="iniciar-sesion" class="btn waves-effect amber" type="submit" name="action"><p>INICIAR SESIÓN</p></button>
+					<a class="olvidado" href="#">¿Olvidaste tu contraseña?</a>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="input-field white col s10 offset-s1">
-				<i class=" material-icons prefix">lock</i>
-				<input id="password" type="password" class="validate">
-				<label for="password"><p>Password</p></label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s10 offset-s1">
-				<button class="btn waves-effect amber" type="submit" name="action"><p>INICIAR SESIÓN</p></button>
-				<a class="olvidado" href="#">¿Olvidaste tu contraseña?</a>
-			</div>
-		</div>
+		</form>
 		<div class="row">
 			<div class="col s12 last center">
 				<p class="no-count">¿NO TIENES CUENTA? <a class="a-no-count amber-text"href="#">REGÍSTRATE</a></p>
