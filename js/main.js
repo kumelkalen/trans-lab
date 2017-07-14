@@ -39,7 +39,10 @@ $(document).ready(function($){
 			$(".invalid").hide();
 			console.log(numId);
 			$.getJSON('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+numId, function(resp) {
-			    
+			    $.each(resp, function(k, v) {
+        			console.log(k + ' : ' + v);
+				}); 
+				
 			});
 		}
 	});
