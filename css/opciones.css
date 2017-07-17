@@ -36,3 +36,11 @@ nav{
 	height: 150px;
 	margin: 20px;
 }
+.agregar-tarj{
+	width: 100%;
+}
+.preg-title{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: 900;
+}
